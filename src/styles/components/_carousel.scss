@@ -1,0 +1,16 @@
+
+.carousel {
+    max-width: 1200px;
+    margin: 150px auto 0;
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+        width: 75%;
+        height: 70%;
+    }
+}
+.carousel-indicators li{
+    width: 20px;
+    height: 8px;
+}

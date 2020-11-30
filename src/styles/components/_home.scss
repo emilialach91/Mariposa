@@ -1,0 +1,136 @@
+.home {
+    background-image: url('/src/images/subpage_background.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+    @include large {
+        background-image: none;
+        background-color: #D7E6E0;
+    }
+    
+
+    
+    &__container {
+        max-width: 1440px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        @include large {
+            margin: 0 10%;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        padding-top: 50px;
+        letter-spacing: 0.5px;
+        display: flex;
+        flex-direction: column;  
+        justify-content: left;
+        align-content: center;
+        margin: 0 10%;
+
+        @include large {
+            margin: 0;
+            padding-right: 20px;
+        }
+
+
+    }
+
+    &__title {
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: bold; 
+        text-align: left;
+        line-height: 1.3;
+        margin: 15px 0;
+
+        @include small {
+            font-size: 3rem;
+        }
+        
+
+        @include medium {
+            font-size: 4rem;
+            line-height: 1.2;
+        }
+
+        @include large {
+            position: absolute;
+            font-size: 5rem;
+            margin-top: 30px;
+        }
+    }
+
+
+    &__description {
+        text-align: justify; 
+        line-height: 1.6;
+        padding: 30px 0;
+        font-weight: 300;
+        
+        @include small {
+            font-size: 1.3rem;
+        }
+
+
+        @include large {
+            margin: 200px 30px 0 0 ;
+            font-weight: 300;
+            font-size: 1.2rem;
+            line-height: 1.3;
+        }
+    }
+
+    &__img {
+        display: none;
+
+        @include large {
+            height: 100%;
+            display: inline-block;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            right: 0px;
+        }
+    }
+
+    &__button {
+        align-items: center;
+        display: inline-block;
+        width: 60px;
+        height: 30px;
+        font-weight: lighter;
+        position: relative;
+    }
+
+    &__button::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: $dark;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: scaleX(0);
+        transition: transform 0.5s;
+    }
+
+    &__button:hover::after {
+        transform: scaleX(1);
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $dark;
+    }
+
+    &__link:hover {
+        color: $dark;
+    }
+}

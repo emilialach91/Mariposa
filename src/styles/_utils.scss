@@ -1,0 +1,34 @@
+$margin: 20px;
+$family: 'Poppins light', sans-serif;
+$dark: #2E2A2C;
+$brown-button: #3E2203;
+$orange-button: #FDB461;
+$white: #EAEAEA;
+
+$small: 576px;
+@mixin small {
+    @media (min-width: #{$small}) {
+        @content;
+    }
+}
+
+$medium: 768px;
+@mixin medium {
+    @media (min-width: #{$medium}) {
+        @content;
+    }
+}
+
+$large: 992px;
+@mixin large {
+    @media (min-width: #{$large}) {
+        @content;
+    }
+}
+
+$extra-large: 1200px;
+@mixin extra-large {
+    @media (min-width: #{$extra-large}) {
+        @content;
+    }
+}

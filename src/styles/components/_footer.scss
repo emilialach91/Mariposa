@@ -1,0 +1,16 @@
+.footer {
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+
+    &__description {
+        font-weight: 300;
+        color: $white;
+        opacity: 0.6;
+        margin-left: $margin;
+        font-size: 0.8rem;
+        padding-bottom: 20px;
+    }
+}

@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: $family;
+    font-size: 16px;
+    
+}
+
+
+.global{
+    background-image: url('/src/images/global_background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    &__container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+.show {
+    transition: all 0.2s;
+    opacity: 1;
+    
+}
+    
+.hide {
+    transition: all 0.2s;
+    opacity: 0;
+    
+}
+
+
+
+
