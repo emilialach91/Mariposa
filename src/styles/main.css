@@ -193,7 +193,7 @@ html {
 }
 
 .global {
-  background-image: url("/src/images/global_background.png");
+  background-image: url("./images/global_background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -802,7 +802,7 @@ html {
 }
 
 .home {
-  background-image: url("/src/images/subpage_background.png");
+  background-image: url("./images/subpage_background.png");
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -975,7 +975,7 @@ html {
 }
 
 .volunteer {
-  background-image: url("/src/images/subpage2_background.png");
+  background-image: url("./images/subpage2_background.png");
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
