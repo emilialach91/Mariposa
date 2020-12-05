@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
 
-
     @include extra-large {
         justify-content: left;
         align-items: center;
@@ -57,7 +56,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        
 
         @include small {
             justify-content: center;
